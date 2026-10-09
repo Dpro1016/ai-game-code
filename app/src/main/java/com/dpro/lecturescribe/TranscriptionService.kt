@@ -122,13 +122,15 @@ class TranscriptionService : Service() {
             var micFailures = 0
 
             while (!stopRequested) {
-                val n = mic!!.read(chunk, 0, chunk.size)
+                val current = mic!!
+                val n = current.read(chunk, 0, chunk.size)
                 if (n <= 0) {
                     // Audio server hiccup: reopen the mic rather than ending the lecture.
                     Log.w(TAG, "mic read returned $n")
                     if (++micFailures > 20) throw IllegalStateException("Microphone stopped working")
-                    runCatching { mic.stop() }
-                    mic.release()
+                    runCatching { current.stop() }
+                    current.release()
+                    mic = null
                     SystemClock.sleep(300)
                     mic = openMic()
                     continue

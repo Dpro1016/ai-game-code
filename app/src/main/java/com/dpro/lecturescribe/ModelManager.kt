@@ -26,7 +26,7 @@ import java.net.URL
 object ModelSpec {
     const val NAME = "sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8"
     const val URL = "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/$NAME.tar.bz2"
-    const val DOWNLOAD_MB = 460
+    const val DOWNLOAD_MB = 480
     val FILES = listOf("encoder.int8.onnx", "decoder.int8.onnx", "joiner.int8.onnx", "tokens.txt")
 }
 
