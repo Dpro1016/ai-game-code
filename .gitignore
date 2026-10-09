@@ -1,0 +1,12 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+# Downloaded at build time (see app/build.gradle.kts)
+app/libs/*.aar
+app/libs/*.part
