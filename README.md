@@ -22,8 +22,8 @@ Samsung Galaxy Tab S9 Ultra but runs on any 64-bit Android 10+ device.
    **https://github.com/Dpro1016/ai-game-code/releases/latest/download/LectureScribe.apk**
 2. Open the downloaded file. If Android asks, allow your browser to "install unknown apps",
    then tap **Install**.
-3. Open **Lecture Scribe** and tap **Download speech model**. This is about 480 MB and only
-   happens once, so use Wi-Fi.
+3. Open **Lecture Scribe** and tap **Download speech model**. This is about 480 MB, then a few
+   minutes of unpacking. It only happens once, so use Wi-Fi and keep the app open.
 4. Tap **Allow** on the "Allow background recording" card so Samsung's battery saver can't
    pause long recordings.
 

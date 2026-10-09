@@ -59,7 +59,7 @@ fun SetupScreen(state: ModelState, onDownload: () -> Unit) {
                         if (state.total > 0) state.done.toFloat() / state.total else null,
                     )
                     is ModelState.Unpacking -> Progress(
-                        "Unpacking… this takes a minute or two",
+                        "Unpacking… this takes a few minutes",
                         state.done.toFloat() / state.total.coerceAtLeast(1),
                     )
                     is ModelState.Failed -> {
